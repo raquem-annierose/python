@@ -1,7 +1,7 @@
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
+num_1 = int(input("Enter first number: "))
+num_2 = int(input("Enter second number: "))
 
-if num1 == num2:
+if num_1 == num_2:
     print("The numbers are equal.")
 else:
     print("The numbers are not equal.")

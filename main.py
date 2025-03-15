@@ -10,38 +10,38 @@ while True:
 
     choice = input("Enter your choice: ")
 
-    def checkEquality():
+    def check_equality():
         # TODO(member_2): Do item 1.
         print("Item 1 selected")
 
-    def oddEvenZero():
+    def odd_even_zero():
         # TODO(member_3): Do item 2.
         print("Item 2 selected")
     
-    def highestNumber():
+    def highest_number():
         # TODO(member_3): Do item 2.
         print("Item 3 selected")
 
-    def coordinateQuadrant():
+    def coordinate_quadrant():
         # TODO(member_3): Do item 2.
         print("Item 4 selected")
 
-    def consonantVowel():
+    def consonant_vowel():
         # TODO(member_3): Do item 2.
         print("Item 5 selected")
 
-    def sumTwoDigits():
+    def sum_two_digits():
         # TODO(member_3): Do item 2.
         print("Item 6 selected")
 
     # Dictionary to simulate switch-case
     switch = {
-        "1": checkEquality,
-        "2": oddEvenZero,
-        "3": highestNumber,
-        "4": coordinateQuadrant,
-        "5": consonantVowel,
-        "6": sumTwoDigits,
+        "1": check_equality,
+        "2": odd_even_zero,
+        "3": highest_number,
+        "4": coordinate_quadrant,
+        "5": consonant_vowel,
+        "6": sum_two_digits,
         "7": lambda: print("Exiting program...")
     }
 
