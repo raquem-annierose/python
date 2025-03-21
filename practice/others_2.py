@@ -37,6 +37,27 @@ def reverse_two_digits():
     else:
         print("Invalid input, enter a two-digit number.")
 
+def even_digit_sum():
+    num = input("Enter a number: ")
+    total = sum(int(digit) for digit in num if int(digit) % 2 == 0)
+    print("Sum of even digits:", total)
+
+def character_case_checker():
+    char = input("Enter a single character: ")
+    if char.isupper():
+        print("Uppercase letter")
+    elif char.islower():
+        print("Lowercase letter")
+    else:
+        print("Not a letter")
+
+def prime_checker():
+    num = int(input("Enter a number: "))
+    if num > 1 and all(num % i != 0 for i in range(2, int(num**0.5) + 1)):
+        print("Prime number")
+    else:
+        print("Not a prime number")
+
 def main():
     while True:
         print("\nChoose an exercise:")
@@ -46,7 +67,10 @@ def main():
         print("4: Temperature Converter")
         print("5: Palindrome Checker")
         print("6: Reverse Two Digits")
-        print("7: Exit")
+        print("7: Sum of Even Digits")
+        print("8: Character Case Checker")
+        print("9: Prime Number Checker")
+        print("10: Exit")
         choice = input("Enter your choice: ")
         if choice == "1":
             factorial_calculator()
@@ -61,6 +85,12 @@ def main():
         elif choice == "6":
             reverse_two_digits()
         elif choice == "7":
+            even_digit_sum()
+        elif choice == "8":
+            character_case_checker()
+        elif choice == "9":
+            prime_checker()
+        elif choice == "10":
             print("Exiting...")
             break
         else:
