@@ -1,5 +1,5 @@
 while True:
-# TODO(member_1): Display choices.
+    # TODO(member_1): Display choices.
     print("1: Check Equality")
     print("2: Odd Even Zero")
     print("3: Highest Number")
@@ -10,26 +10,27 @@ while True:
 
     choice = input("Enter your choice: ")
 
-    if choice == "1":
-        # TODO(member_2): Do item 1.
-        print("Item 1 selected")
-    elif choice == "2":
-        # TODO(member_3): Do item 2.
-        print("Item 2 selected")
-    elif choice == "3":
-        # TODO(member_3): Do item 2.
-        print("Item 2 selected")
-    elif choice == "4":
-        # TODO(member_3): Do item 2.
-        print("Item 2 selected")
-    elif choice == "5":
-        # TODO(member_3): Do item 2.
-        print("Item 2 selected")
-    elif choice == "6":
-        # TODO(member_3): Do item 2.
-        print("Item 2 selected")
-    elif choice == "7":
-        print("Exiting program...")
-        break
-    else:
-        print("Invalid choice")
+    match choice:
+        case "1":
+            # TODO(member_2): Implement Check Equality function.
+            print("Item 1 selected")
+        case "2":
+            # TODO(member_3): Implement Odd Even Zero function.
+            print("Item 2 selected")
+        case "3":
+            # TODO(member_4): Implement Highest Number function.
+            print("Item 3 selected")
+        case "4":
+            # TODO(member_5): Implement Coordinate Quadrant function.
+            print("Item 4 selected")
+        case "5":
+            # TODO(member_6): Implement Consonant or Vowel function.
+            print("Item 5 selected")
+        case "6":
+            # TODO(member_7): Implement Sum Two Digits function.
+            print("Item 6 selected")
+        case "7":
+            print("Exiting program...")
+            break
+        case _:
+            print("Invalid choice")

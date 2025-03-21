@@ -43,3 +43,7 @@ else:
 
 print(f"There is {admin_count} admin(S) in the system.")
 
+x = 5
+y = "5"
+print (x * y)
+
