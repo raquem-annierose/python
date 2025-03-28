@@ -20,6 +20,7 @@ def sum_list ():
     
     total_sum = number_1 + number_2 + number_3 + number_4 + number_5
     print(f"Total Sum: {total_sum}")
+    return total_sum
 
 def average_list ():
     number_1 = list[0]
