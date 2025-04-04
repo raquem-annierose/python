@@ -5,10 +5,10 @@ os.system('cls')
 
 # Input list
 numbers = []
-occurence = 5
+occurence = int(input("Enter the range of the list: "))
 
-for i in range(occurence):
-    numbers.append(int(input(f"Enter number {i + 1} value: ")))
+for num in range(occurence):
+    numbers.append(int(input(f"Enter number {num + 1} value: ")))
 
 print(numbers)
 
