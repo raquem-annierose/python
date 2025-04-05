@@ -2,6 +2,8 @@ number = int(input("Enter a number (0 to 5): "))  # Prompt user with valid range
 
 food = ["Chocolate", "Burgers", "Fries", "Soda", "Chicken"]
 
+print(food)
+
 food.insert(5, "Pizza")  # Add "Pizza" at index 5
 
 print(food)  # Print the entire list
