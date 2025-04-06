@@ -11,6 +11,11 @@ print(person["name"])  # Output: Liam
 # Print the entire dictionary
 print(person)  # Output: {'name': 'Liam', 'age': 21, 'hobby': 'photography'}
 
+#printloop
+for key, value in person.items():
+    print(f"{key} = {value}")
+
+
 # Check if the key "hobby" exists in the dictionary
 if "hobby" in person:
     print("Found hobby!")  # Output: Found hobby!
@@ -42,11 +47,7 @@ profile = {
 print("")
 print(profile["contacts"]["email"])  # Output: Liame@mail.com
 
-# Demonstrate different ways of printing strings
-print("AB")  # Output: AB
-print("A" + "B")  # Output: AB (string concatenation)
-print("A", end="B")  # Output: AB (no newline, "B" is appended directly)
-print("\nA", end="\nB")  # Output: A (on a new line), B (on another new line)
+
 
 # Function to calculate the sum of arbitrary positional arguments (*args)
 def add_all(*args):
@@ -55,8 +56,9 @@ def add_all(*args):
 
 # Call the function with different numbers of arguments
 add_all(1, 2, 3)          # Output: Total: 6
-add_all(10, 20, 30, 40)   # Output: Total: 100
-add_all(1, 2, 3, 4, 5)    # Output: Total: 15
+
+
+
 
 # Function to display arbitrary keyword arguments (**kwargs)
 def display_info(**kwargs):
@@ -69,3 +71,9 @@ display_info(name="Liam", hobby="editing", age=21)
 # name = Liam
 # hobby = editing
 # age = 21
+
+# Demonstrate different ways of printing strings
+print("AB")  # Output: AB
+print("A" + "B")  # Output: AB (string concatenation)
+print("A", end="B")  # Output: AB (no newline, "B" is appended directly)
+print("\nA", end="\nB")  # Output: A (on a new line), B (on another new line)
