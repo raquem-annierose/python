@@ -12,3 +12,12 @@ print(f"Character frequencies using check_freq: {freq_dict}")
 sample_text = input('Input text: ')
 count = Counter(sample_text)
 print(f"Character frequencies using Counter: {dict(count)}")
+
+def check_freq(x):
+    return {c: x.count(c) for c in set(x)}
+
+sample_text = str(input ('Input text: '))
+check_freq(sample_text)
+
+print(f"{input}: {check_freq}")
+print()
